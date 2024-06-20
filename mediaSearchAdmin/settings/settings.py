@@ -33,7 +33,7 @@ DEBUG = True
 
 
 # Application definition
-
+# Alteração: add 'mediaSearch' na lista abaixo
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mediaSearch',
 ]
 
 MIDDLEWARE = [
