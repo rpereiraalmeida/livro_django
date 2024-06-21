@@ -23,3 +23,11 @@ Telas
     - Busca de Médicos.
     - Favoritos.
    
+Criando e customizando as models
+  - Speciality: especialidades que serão atribuidas aos médicos
+  - DayWeek: dias da semana com atendimento na clinica
+  - State: estados do país
+  - City: cidades de um estado
+  - Neighborhood: bairros de uma cidade
+  - Address: endereços de atendimento do médico
+  - Rating: tabela onde serão adicionadas as pontuações aos médicos
