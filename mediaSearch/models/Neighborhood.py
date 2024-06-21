@@ -1,5 +1,6 @@
 from mediaSearch.models import*
 
+# Bairros de uma cidade
 class Neihborhood(models.Model):
     city = models.ForeignKey(City, null=True, related_name='city', on_delete=models.SET_NULL)
     name = models.CharField(null=False, max_length=20)
@@ -9,5 +10,4 @@ class Neihborhood(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.name, self.city.name)
-    
     
