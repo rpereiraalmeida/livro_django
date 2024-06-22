@@ -6,7 +6,7 @@ DEBUG = True
 SECRET_KEY = 'rq(%>JL"F@,$\dLAWrmv)e>4JX'
 
 # Você pode deixar em branco com colchetes vazios []
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 DATABASES = {
     'default': {

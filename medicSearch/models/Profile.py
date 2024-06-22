@@ -14,7 +14,7 @@ class Profile(models.Model):
     image = models.ImageField(null=True, blank=True)
     # Adicionando campos ManyToMany
     favorites = models.ManyToManyField(User, blank=True, related_name='favorites')
-    specialities = models.ManyToManyField(Speciality, blank=True, related_name='specialities')
+    specialties = models.ManyToManyField(Speciality, blank=True, related_name='specialties')
     addresses = models.ManyToManyField(Address, blank=True, related_name='addresses')
 
     def __str__(self):

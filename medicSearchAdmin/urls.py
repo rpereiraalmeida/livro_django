@@ -20,8 +20,16 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 
+# from django.conf.urls import url, include <descontinuada>
+# Adicionamos após a configuração das views
+from django.urls import include, re_path
+
 # Adicionamos o + e todos os itens que vem a seguir dele
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Adicionamos após a configuração das views
+    path('', include('medicSearch.urls.HomeUrls')),
+    path('profile/', include('medicSearch.urls.ProfileUrls')),
+    path('medic/', include('medicSearch.urls.MedicUrls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
